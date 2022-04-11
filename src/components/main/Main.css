@@ -1,0 +1,11 @@
+.container{
+    width: 70%;
+}
+.good{
+    display: flex;
+}
+.order{
+    width: 30%;
+    position: fixed;
+    margin-left: 473px;
+}

@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    border: 1px solid black;
+}
+.imgs img{
+    width: 200px;
+    height: 160px;
+}
+.margain{
+    margin-left: 20px;
+}
+.margain button{
+    padding: 10px;
+}
+.w30{
+    width: 30%;
+}
