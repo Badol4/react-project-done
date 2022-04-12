@@ -1,10 +1,11 @@
 import React from 'react';
 import './Cart.css'
-
-const Cart = ({cart}) => {
+const Cart = ({cart,handleClick1}) => {
     const {price} = cart
     const totalPrice = cart.reduce((sum, course) =>sum + course.price,0) 
     const tex = totalPrice / 10
+
+    
     
     // this line of code is the best for price sum in array
     
@@ -14,7 +15,7 @@ const Cart = ({cart}) => {
             <p>price: {totalPrice}</p>
             <p>tex: {tex}</p>
             <p>Grand Total : {totalPrice + tex}</p>
-            <button>Place order</button>
+            <button onClick={handleClick1}>Place order</button>
             <p></p>
         </div>
     );

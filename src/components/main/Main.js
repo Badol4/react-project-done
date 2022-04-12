@@ -7,10 +7,21 @@ import './Main.css'
 const Main = () => {
     const [data , setData] = useState(Data)
     const [cart, setCart]= useState([])
+
+
     const handleClick = ((data)=> {
         const newCard =[...cart,data]
         setCart(newCard);
+        
     })
+    const handleClick1 = ((data)=> {
+      const newCArd = [...cart, data]
+    //   setCart (newCArd)
+      setCart([])
+
+        
+    })
+
     
     return (
         <div className='good'>
@@ -20,7 +31,7 @@ const Main = () => {
             }
             </div>
             <div className='order'>
-            <Cart cart = {cart}></Cart>
+            <Cart cart = {cart} handleClick1 = {handleClick1}></Cart>
             </div>
             
         </div>
